@@ -1,0 +1,15 @@
+domain: my.domain
+layout:
+- go.kubebuilder.io/v3
+projectName: tenant-controller
+repo: my.domain/tenant
+resources:
+- api:
+    crdVersion: v1
+  controller: true
+  domain: my.domain
+  group: multitenancy
+  kind: Tenant
+  path: my.domain/tenant/api/v1
+  version: v1
+version: "3"
